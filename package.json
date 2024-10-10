@@ -1,0 +1,52 @@
+{
+  "name": "vite-reactts-eslint-prettier",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "vite --port=3000",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "lint-check": "eslint ./src ./tests --ext .js,.ts,.tsx,.jsx",
+    "lint-fix": "eslint ./src ./tests --ext .js,.ts,.tsx,.jsx  --fix",
+    "type-check": "tsc",
+    "test": "vitest",
+    "test-coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/uuid": "^9.0.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^6.23.1",
+    "react-transition-group": "^4.4.5",
+    "redux-persist": "^6.0.0",
+    "typescript": "^5.4.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^7.10.0",
+    "@typescript-eslint/parser": "^7.10.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-webpack": "^0.13.8",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.1",
+    "jsdom": "^24.0.0",
+    "postcss": "^8.4.47",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.13",
+    "vite": "^5.2.11",
+    "vitest": "^1.6.0"
+  },
+  "license": "MIT"
+}
