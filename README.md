@@ -1,18 +1,24 @@
-# Туду лист с бесконечной вложенностью списков туду. С тестами и полноценной эмуляцией слоя АПИ
+# Туду лист с тестами
 
-# Используется: 
+ДЕМО: https://test-todo-mindbox-2.vercel.app/
 
-vite, react, typescript, redux-tookit, docker(docker-compose), nginx (для раздачи статики билда), eslint + prettier
+# Используется:
+
+vite, react, tailwind, typescript, redux-tookit, docker(docker-compose), nginx (для раздачи статики билда), eslint + prettier
 
 # запуск
 
 npm i
 
-npm run dev
+npm run start
 
 # тесты
 
 npm run test
+
+# покрытие тестами
+
+npm run test-coverage
 
 # запуск в докере (протестировано только на линукс, нужны make, docker, docker-compose)
 
@@ -23,6 +29,5 @@ make docker-ddev
 запуск в режиме раздачи билда через nginx (порт 80)
 
 make docker-init
-
 
 разумеется порты можно поменять в настройках
